@@ -1479,7 +1479,7 @@
                 "linkedTestCode": null
               }
             ],
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "Annual With Certificate",
             "testTypeName": "Low Emissions Certificate (LEC) with annual test"
           },
           {
@@ -1502,7 +1502,7 @@
                 "linkedTestCode": null
               }
             ],
-            "testTypeClassification": "Annual NO CERTIFICATE",
+            "testTypeClassification": "Annual With Certificate",
             "testTypeName": "Low Emissions Certificate (LEC)"
           }
         ]
