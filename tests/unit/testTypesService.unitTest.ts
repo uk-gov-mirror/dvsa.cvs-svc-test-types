@@ -329,7 +329,7 @@ describe("when database is off", () => {
   });
 });
 
-describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
+describe("fieldInFilterExpressionMatchesTheOneInTestCode", () => {
   context("when passing a testCode that contains an array on field forVehicleAxles and a filterExpression that has a value included in that array  ", () => {
     it("should return true", () => {
       const testCode = JSON.parse("{\n" +
@@ -407,7 +407,7 @@ describe("when database is off", () => {
   });
 });
 
-describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
+describe("fieldInFilterExpressionMatchesTheOneInTestCode", () => {
   context("when passing a testCode that contains an array on field forVehicleAxles and a filterExpression that has a value included in that array  ", () => {
     it("should return true", () => {
       const testCode = JSON.parse("{\n" +
@@ -655,7 +655,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       expect.assertions(2);
       try {
-        testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "nonexistentFilter");
+        testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "nonexistentFilter");
       } catch (error) {
         expect(error.statusCode).toBe(500);
         expect(error.body).toBe(ERRORS.InternalServerError);
@@ -680,7 +680,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory")).toBe(true);
     });
   });
 
@@ -698,7 +698,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forEuVehicleCategory")).toBe(true);
     });
   });
 
@@ -719,7 +719,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass")).toBe(true);
     });
   });
 
@@ -737,7 +737,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleClass")).toBe(true);
     });
   });
 
@@ -758,7 +758,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass")).toBe(true);
     });
   });
 
@@ -776,7 +776,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleSubclass")).toBe(true);
     });
   });
 
@@ -798,7 +798,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels")).toBe(true);
     });
   });
 
@@ -816,7 +816,7 @@ describe("fieldInfilterExpressionMatchesTheOneInTestCode", () => {
 
       const testTypesService = new TestTypesService(new MockTestTypesDAO());
 
-      expect(testTypesService.fieldInfilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels")).toBe(true);
+      expect(testTypesService.fieldInFilterExpressionMatchesTheOneInTestCode(testCode, filterExpression, "forVehicleWheels")).toBe(true);
     });
   });
 });

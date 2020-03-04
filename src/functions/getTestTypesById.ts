@@ -4,9 +4,8 @@ import { HTTPResponse } from "../models/HTTPResponse";
 import Joi from "joi";
 import { Handler } from "aws-lambda";
 import { parseAndCastQueryParams } from "../utils/parseMissingQueryParams";
-import { ForVehicleConfiguration, ForVehicleSize, ForVehicleType} from "../models/ITestType";
 import { NUM_PARAMETERS } from "../assets/Enums";
-import {ForEuVehicleCategory, ForVehicleConfiguration, ForVehicleSize, ForVehicleSubclass, ForVehicleType} from "../models/ITestType";
+import {ForVehicleConfiguration, ForVehicleSize, ForVehicleType} from "../models/ITestType";
 
 export const getTestTypesById: Handler = (event, context, callback) => {
   const testTypesDAO = new TestTypesDAO();
